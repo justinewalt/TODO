@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+
+.strikethrough:checked + .list_item {
+	text-decoration: line-through;
+}

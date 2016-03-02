@@ -1,0 +1,10 @@
+<h1>Welcome to Your TODO List!</h1>
+<hr />
+<hr />
+<% @items.each do |item| %>
+	<input type="checkbox" class="strikethrough"/>
+	<%= link_to "#{item.title}", item_path(item), class: "list_item" %>
+	<br />
+<% end %>
+<hr />
+ <%= link_to 'New TODO List Item', new_item_path %> 

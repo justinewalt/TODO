@@ -1,0 +1,16 @@
+<h3>Create a new TODO List Item</h3>
+<hr />
+<hr />
+<h5>Fill in the information below to create a new TODO List Item. If you have any questions on how to create a new item, you can write it down on a piece of paper, and then go home and eat that piece of paper. I promise I'll get the question in 5 - 7 months, or for sure by the next leap year.</h5>
+<p>Thanks!</p>
+<br />
+<h1>TODO Item</h1>
+<%= form_for @item do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<%= f.label :body %>
+	<%= f.text_field :body %>
+	<%= f.label :author %>
+	<%= f.text_field :author %>
+	<%= f.submit %>
+<% end %>

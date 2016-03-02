@@ -1,0 +1,9 @@
+<h1>TODO Items Individualized</h1>
+<h2><%= @item.title %></h2>
+<h3><%= @item.author %></h3>
+<p><%= @item.body %></p>
+ <%= link_to 'Edit TODO List Item', edit_item_path(@item) %>
+ <%= link_to 'Delete TODO List Item', item_path(@item), method: :delete, data: {confirm: "Do You Really Want To Delete This?????"}%>
+ <hr />
+<%= link_to 'HOME', items_path %> | 
+<%= link_to 'New TODO Item', new_item_path %> 

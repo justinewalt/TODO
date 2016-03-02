@@ -1,0 +1,13 @@
+<h1>Edit an Existing TODO Item</h1>
+<hr />
+<hr />
+<p>If you would like to edit an existing TODO Item, please make your changes below.</p>
+<%= form_for @item do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<%= f.label :body %>
+	<%= f.text_field :body %>
+	<%= f.label :author %>
+	<%= f.text_field :author %>
+	<%= f.submit %>
+<% end %>
